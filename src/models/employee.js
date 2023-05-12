@@ -8,7 +8,6 @@ const dbUser = process.env.DB_USERNAME;
 const dbPass = process.env.DB_PASS;
 const dbPort = process.env.DB_PORT;
 
-console.log(`postgresql://${dbName}:${dbPass}@${dbHost}:${dbPort}/${dbUser}`)
 const sequelize = new Sequelize(`postgresql://${dbName}:${dbPass}@${dbHost}:${dbPort}/${dbUser}`, {
 });
 
